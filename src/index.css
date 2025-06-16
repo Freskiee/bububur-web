@@ -252,17 +252,18 @@ a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Ajustes para evitar superposición con el navbar */
+/* Asegurar que el primer bloque de contenido tenga suficiente padding-top */
+.main-content {
+  padding-top: 80px; /* Ajusta según la altura real del navbar */
+}
+
+/* Asegurar que el Navbar esté configurado correctamente */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 1000;
   height: 60px;
   background-color: white;
-}
-
-.main-content {
-  padding-top: 80px;
 }
 
 .page-title {
