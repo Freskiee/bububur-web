@@ -228,7 +228,11 @@ a:hover {
   }
 
   .navbar-brand img {
-    height: 24px;
+    height: 30px;
+  }
+
+  .navbar-collapse {
+    background-color: white;
   }
 
   .page-title {
@@ -252,12 +256,13 @@ a:hover {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
-  height: 60px; /* Asegura un tamaño fijo para el navbar */
+  z-index: 1000;
+  height: 60px;
+  background-color: white;
 }
 
 .main-content {
-  margin-top: 100px; /* Aumenta el margen superior para evitar superposición */
+  margin-top: 100px;
 }
 
 .page-title {
