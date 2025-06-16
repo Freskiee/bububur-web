@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <BSNavbar bg="white" expand="lg" fixed="top" className="shadow-sm">
+    <BSNavbar bg="white" expand="lg" fixed="top" className="shadow-sm" style={{ zIndex: 1000 }}>
       <Container>
         <BSNavbar.Brand as={Link} to="/" className="fw-bold">
           <img src="/images/Bububurger-logo-freskiee.png" alt="Bububurger Logo" style={{ height: '30px' }} />
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <BSNavbar.Toggle aria-controls="basic-navbar-nav">
           <Menu size={24} />
         </BSNavbar.Toggle>
-        <BSNavbar.Collapse id="basic-navbar-nav">
+        <BSNavbar.Collapse id="basic-navbar-nav" style={{ backgroundColor: 'white' }}>
           <Nav className="ms-auto">
             <Nav.Link 
               as={Link} 
