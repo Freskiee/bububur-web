@@ -232,9 +232,10 @@ a:hover {
   }
 
   .page-title {
-    font-size: 1.5rem;
-    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
     padding: 10px;
+    text-align: center;
   }
 }
 
