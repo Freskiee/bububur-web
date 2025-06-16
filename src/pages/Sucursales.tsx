@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Carousel, Modal, Button, Card } from 'react-bootstrap';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
+import bombas from '/images/bombas.png';
 
 const Sucursales: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -9,43 +10,11 @@ const Sucursales: React.FC = () => {
   const sucursales = [
     {
       id: 1,
-      name: 'Sucursal Centro',
-      address: 'Av. Principal 123, Centro Histórico',
-      phone: '+52 (55) 1234-5678',
-      image: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
-      description: 'Nuestra sucursal original, ubicada en el corazón de la ciudad con ambiente tradicional y acogedor.'
-    },
-    {
-      id: 2,
-      name: 'Sucursal Norte',
-      address: 'Blvd. Norte 456, Plaza Comercial Norte',
-      phone: '+52 (55) 2345-6789',
-      image: 'https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
-      description: 'Sucursal moderna con terraza al aire libre, perfecta para disfrutar en familia.'
-    },
-    {
-      id: 3,
-      name: 'Sucursal Sur',
-      address: 'Av. Sur 789, Centro Comercial Sur',
-      phone: '+52 (55) 3456-7890',
-      image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
-      description: 'Ubicada en el centro comercial más grande del sur, con amplio estacionamiento.'
-    },
-    {
-      id: 4,
-      name: 'Sucursal Oriente',
-      address: 'Calle Oriente 321, Zona Oriente',
-      phone: '+52 (55) 4567-8901',
-      image: 'https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
-      description: 'Nuestra sucursal más nueva, con diseño contemporáneo y tecnología de vanguardia.'
-    },
-    {
-      id: 5,
-      name: 'Sucursal Poniente',
-      address: 'Av. Poniente 654, Colonia Poniente',
-      phone: '+52 (55) 5678-9012',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
-      description: 'Ambiente juvenil y dinámico, popular entre estudiantes y jóvenes profesionistas.'
+      name: 'Bububurger Las Bombas',
+      address: 'Calz. Bombas 841, Col. Residencial Cafetales, 04918, Coyoacán, CDMX',
+      phone: '+52 (55) 4129-8112',
+      image: bombas,
+      description: 'Nuestra indistinguible casa.'
     }
   ];
 
