@@ -1,8 +1,16 @@
-import React, { useEffect } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Container, Row, Col, Card, Carousel, Modal } from 'react-bootstrap';
 import { Calendar, MapPin, Award, Users } from 'lucide-react';
 
 const Historia: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const handleImageClick = (image: string) => {
+    setSelectedImage(image);
+    setShowModal(true);
+  };
+
   const timelineEvents = [
     {
       year: '2014',
@@ -62,6 +70,40 @@ const Historia: React.FC = () => {
             <p className="lead text-muted">
               Un viaje de más de 10 años creando los mejores sabores
             </p>
+          </Col>
+        </Row>
+
+        <Row className="mb-5">
+          <Col>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2"
+                  alt="Imagen 1"
+                  style={{ height: '400px', objectFit: 'cover', cursor: 'pointer' }}
+                  onClick={() => handleImageClick('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2')}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2"
+                  alt="Imagen 2"
+                  style={{ height: '400px', objectFit: 'cover', cursor: 'pointer' }}
+                  onClick={() => handleImageClick('https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2')}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2"
+                  alt="Imagen 3"
+                  style={{ height: '400px', objectFit: 'cover', cursor: 'pointer' }}
+                  onClick={() => handleImageClick('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2')}
+                />
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
 
@@ -141,6 +183,12 @@ const Historia: React.FC = () => {
             <p className="mb-0">Empleados</p>
           </Col>
         </Row>
+
+        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+          <Modal.Body>
+            <img src={selectedImage} alt="Imagen ampliada" className="img-fluid" />
+          </Modal.Body>
+        </Modal>
       </Container>
     </div>
   );

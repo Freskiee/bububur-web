@@ -90,11 +90,11 @@ const Contacto: React.FC = () => {
                   Nuestra Ubicación Principal
                 </h3>
                 <p className="text-center text-muted mb-4">
-                  Calz. Bombas 731, Cafetales 04918, Ciudad de México
+                  Calz. Bombas 841, Cafetales 04918, Ciudad de México
                 </p>
                 <div className="map-container">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.8234567890123!2d-99.1234567!3d19.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0123456789ab%3A0x123456789abcdef0!2sCalz.%20Bombas%20731%2C%20Cafetales%2C%2004918%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.8234567890123!2d-99.1234567!3d19.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0123456789ab%3A0x123456789abcdef0!2sCalz.%20Bombas%20841%2C%20Cafetales%2C%2004918%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

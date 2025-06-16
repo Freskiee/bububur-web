@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { MapPin, Clock, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -8,12 +9,12 @@ const Footer: React.FC = () => {
       <Container>
         <Row>
           <Col md={4} className="mb-4">
-            <h5 className="mb-3" style={{ color: 'var(--bububurger-orange)' }}>
-              🍔 Bububurger
-            </h5>
+            <Link to="/">
+              <img src="/images/Bububurger-logo-freskiee.png" alt="Bububurger Logo" style={{ height: '100px' }} />
+            </Link>
             <p className="mb-3">
               <MapPin size={18} className="me-2" />
-              Calz. Bombas 731, Cafetales 04918, Ciudad de México
+              Calz. Bombas 841, Cafetales 04918, Ciudad de México
             </p>
             <p className="mb-0">
               Las mejores hamburguesas al carbón desde 2014
@@ -26,15 +27,28 @@ const Footer: React.FC = () => {
             </h6>
             <p className="mb-2">
               <Phone size={16} className="me-2" />
-              +52 (55) 1234-5678
+              +52 (55) 4129-8112
             </p>
             <p className="mb-2">
               <Mail size={16} className="me-2" />
-              contacto@bububurger.com
+              bubu.factura@gmail.com
             </p>
             <p className="mb-0">
               <Clock size={16} className="me-2" />
-              Lun - Dom: 11:00 AM - 11:00 PM
+              Lunes: Cerrado
+            </p>
+            <p className="mb-0">
+            <Clock size={16} className="me-2" />
+            Martes - Miércoles: 16:00 - 23:30
+            </p>
+            <p className="mb-0">
+            <Clock size={16} className="me-2" />
+            Jueves - Viernes- Sábado: 13:00 - 00:30
+            
+            </p>
+            <p className="mb-0">
+            <Clock size={16} className="me-2" />
+            Domingo: 13:00 - 23:30
             </p>
           </Col>
           
@@ -43,10 +57,10 @@ const Footer: React.FC = () => {
               Síguenos
             </h6>
             <div className="social-icons">
-              <a href="#" aria-label="Facebook">
+              <a href="https://www.facebook.com/bububurgeralcarbon" aria-label="Facebook">
                 <Facebook size={24} />
               </a>
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com/bububurger01" aria-label="Instagram">
                 <Instagram size={24} />
               </a>
             </div>

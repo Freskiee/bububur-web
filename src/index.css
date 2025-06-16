@@ -253,10 +253,11 @@ a:hover {
   position: fixed;
   width: 100%;
   z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+  height: 60px; /* Asegura un tamaño fijo para el navbar */
 }
 
 .main-content {
-  margin-top: 80px; /* Aumenta el margen superior */
+  margin-top: 100px; /* Aumenta el margen superior para evitar superposición */
 }
 
 .page-title {
