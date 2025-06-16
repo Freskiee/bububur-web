@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar as BSNavbar, Nav, Container } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -17,16 +16,16 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <BSNavbar bg="white" expand="lg" fixed="top" className="shadow-sm" style={{ zIndex: 1000 }}>
+    <BSNavbar bg="white" expand="lg" fixed="top" className="shadow-sm" style={{ zIndex: 1000, padding: '10px 0' }}>
       <Container>
-        <BSNavbar.Brand as={Link} to="/" className="fw-bold">
-          <img src="/images/Bububurger-logo-freskiee.png" alt="Bububurger Logo" style={{ height: '30px' }} />
+        <BSNavbar.Brand as={Link} to="/" className="fw-bold d-flex align-items-center justify-content-center" style={{ height: '60px' }}>
+          <img src="/images/Bububurger-logo-freskiee.png" alt="Bububurger Logo" style={{ height: '40px' }} />
         </BSNavbar.Brand>
-        <BSNavbar.Toggle aria-controls="basic-navbar-nav">
-          <Menu size={24} />
+        <BSNavbar.Toggle aria-controls="basic-navbar-nav" style={{ fontSize: '24px' }}>
+          🍔
         </BSNavbar.Toggle>
-        <BSNavbar.Collapse id="basic-navbar-nav" style={{ backgroundColor: 'white' }}>
-          <Nav className="ms-auto">
+        <BSNavbar.Collapse id="basic-navbar-nav" style={{ backgroundColor: 'white', padding: '15px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+          <Nav className="ms-auto" style={{ fontSize: '18px', gap: '10px' }}>
             <Nav.Link 
               as={Link} 
               to="/" 

@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="fade-in" style={{ paddingTop: '100px' }}>
+    <div className="fade-in" style={{ paddingTop: '60px' }}>
       {/* Hero Section */}
       <section className="hero-section d-flex align-items-center">
         <Container>

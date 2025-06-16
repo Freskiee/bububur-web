@@ -272,3 +272,19 @@ a:hover {
   padding: 10px;
   text-align: center;
 }
+
+/* Ajustar el diseño del navbar desplegable */
+.navbar-collapse {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 15px;
+  margin: 0;
+}
+
+/* Ajustar el tamaño del logo y el menú */
+.navbar-brand img {
+  height: 40px;
+}
