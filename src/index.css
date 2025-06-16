@@ -247,3 +247,14 @@ a:hover {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Ajustes para evitar superposición con el navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+}
+
+.main-content {
+  margin-top: 60px; /* Ajusta este valor según la altura del navbar */
+}
