@@ -10,13 +10,13 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="fade-in">
+    <div className="fade-in" style={{ paddingTop: '100px' }}>
       {/* Hero Section */}
       <section className="hero-section d-flex align-items-center">
         <Container>
           <Row className="justify-content-center text-center text-white">
             <Col lg={8}>
-              <h1 className="display-3 fw-bold mb-4">
+              <h1 className="display-3 fw-bold mb-4" style={{ marginTop: '80px' }}>
                 Hamburguesas al carbón desde 2014
               </h1>
               <p className="lead mb-4 fs-4">
