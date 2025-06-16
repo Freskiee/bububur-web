@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     <BSNavbar bg="white" expand="lg" fixed="top" className="shadow-sm">
       <Container>
         <BSNavbar.Brand as={Link} to="/" className="fw-bold">
-          <img src="/src/images/Bububurger-logo-freskiee.png" alt="Bububurger Logo" style={{ height: '30px' }} />
+          <img src="/images/Bububurger-logo-freskiee.png" alt="Bububurger Logo" style={{ height: '30px' }} />
         </BSNavbar.Brand>
         <BSNavbar.Toggle aria-controls="basic-navbar-nav">
           <Menu size={24} />
